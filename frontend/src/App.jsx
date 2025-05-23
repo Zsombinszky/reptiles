@@ -90,6 +90,18 @@ function App() {
               }
             />
           </div>
+          <div>
+            <label htmlFor="color">Color</label>
+            <input
+              className="ml-6"
+              type="text"
+              name="color"
+              value={newReptile.color}
+              onChange={(e) =>
+                setNewReptile({ ...newReptile, color: e.target.value })
+              }
+            />
+          </div>
           <button type="submit">Create Reptile</button>
         </form>
       </div>
